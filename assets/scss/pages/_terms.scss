@@ -1,0 +1,29 @@
+.terms {
+  padding: 16px 24px 16px 0;
+  min-height: calc(100vh - 210px);
+  position: relative;
+  width: 100%;
+
+  &-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &-body {
+    margin-top: 14px;
+    padding: 16px;
+    background: $color-white;
+    border-radius: 4px;
+    height: calc(100% - 100px);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-black-100;
+  }
+
+  &-condition {
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+}

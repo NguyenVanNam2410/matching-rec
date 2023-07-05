@@ -1,0 +1,155 @@
+.inquiry-page {
+  padding: 16px 24px 29px 0;
+  min-height: calc(100vh - 150px);
+  width: 100%;
+  .inquiry-content {
+    padding: 24px 16px 47px;
+    background: $color-white;
+    border-radius: 4px;
+    margin-top: 14px;
+    .inquiry-container {
+      display: grid;
+      grid-template-columns: 67% 31%;
+      gap: 2%;
+
+      .left-container {
+       .inquiry-title {
+         font-weight: 700;
+         font-size: 24px;
+         line-height: 24px;
+         color: $color-white;
+         background: $color-dark-000000;
+         padding: 5px 6px 5px 6px;
+         display: inline-block;
+       }
+       .description {
+         margin-top: 12px;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 22px;
+       }
+       .description2 {
+         margin: 8px 0 20px;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 22px;
+       }
+       .col-label {
+         background: $color-bg-default;
+         position: relative;
+         padding: 9px 16px;
+         margin-bottom: -1px;
+         align-items: center;
+         display: flex;
+         .label {
+           font-weight: 700;
+           font-size: 14px;
+           line-height: 22px;
+         }
+         .required {
+           top: 19px;
+         }
+         &.col-textarea {
+           align-items: unset;
+           padding-top: 24px;
+           .required {
+             top: 24px;
+           }
+         }
+       }
+       .content-input {
+         .el-form-item {
+           margin: 8px 47px 8px 0;
+         }
+       }
+       .show-user-data {
+         line-height: 22px;
+         &.show-phone {
+           padding: 8px 0;
+         }
+       }
+       .edit-cv-element {
+         .edit-form-input {
+           display: grid;
+           grid-template-columns: 202px 1fr;
+         }
+       }
+      }
+      .required {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        border-radius: 2px;
+        background: $color-red-primary;
+        color: $color-white;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 1px 6px;
+        text-align: center;
+      }
+      .right-container {
+        .here {
+          background: $color-dark-200;
+          border-radius: 4px 4px 0 0;
+          padding: 10px 0;
+          color: $color-white;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+        }
+        .schedule-des {
+          background: $color-bg-default;
+          border-radius: 4px;
+          padding-bottom: 20px;
+          .phone-number {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            color: $color-bg-tab-active;
+            padding: 20px 0 14px;
+          }
+          .time {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: $color-dark-000000;
+          }
+        }
+      }
+      .edit-cv-element {
+        margin-bottom: 32px;
+        .first-form {
+          border-top: 1px solid $color-bg-tab;
+        }
+        .form-right {
+          margin-left: 16px;
+          border-bottom: 1px solid $color-bg-tab;
+        }
+        textarea {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: $color-dark-000000;
+          &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+      #btn-center {
+        .el-button {
+          width: 136px;
+        }
+      }
+    }
+  }
+}
+.border-input {
+  .border-middle {
+    border-bottom: 1px solid $border-default;
+    margin-left:16px;
+  }
+}

@@ -1,0 +1,247 @@
+.edit {
+  padding: 16px 20px 20px 0;
+
+  @media screen and (max-width: 900px) {
+    padding: 12px 10px 40px 0;
+    .el-form {
+      .edit-table {
+        padding: 16px;
+      }
+    }
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+    & span {
+      padding-left: 19px;
+    }
+
+    & img {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 900px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .el-form-item {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .select-datetime {
+    .el-input__suffix {
+      display: none;
+    }
+  }
+
+  .el-form-item__error {
+    position: relative;
+  }
+
+  .last-input .edit-content {
+    border-bottom: 1px solid $color-bg-tab;
+  }
+
+  &-container {
+    padding: 20px 111px 24px 20px;
+  }
+
+  &-table {
+    margin-top: 16px;
+    background: $color-white;
+    border-radius: 4px;
+  }
+
+  &-col {
+    display: grid;
+    grid-template-columns: 220px 3fr;
+    gap: 24px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &-title {
+    display: flex;
+    background: $color-bg-tab;
+    padding: 9px 20px;
+    color: $color-text-1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-dark-000000;
+  }
+
+  .top-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 12px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+    color: $color-dark-000000;
+  }
+
+  &-content {
+    display: flex;
+    padding: 3px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+
+    &_sub {
+      display: flex;
+      flex-direction: column;
+
+      & span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 24px 0 0;
+
+    @media screen and (max-width: 900px) {
+      padding-top: 28px;
+    }
+
+    .el-button {
+      width: 150px;
+      height: 40px;
+      line-height: 0;
+      font-size: 14px;
+    }
+  }
+}
+
+.top-content {
+  border-top: 1px solid $border-default;
+}
+
+.long-col {
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.sub-col {
+  display: flex;
+  gap: 16px;
+  padding-top: 6px;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (max-width: 1250px) {
+    flex-direction: column;
+  }
+}
+
+.time-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 8px;
+}
+
+.required-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 20px;
+  background: $color-red-2;
+  border-radius: 2px;
+  color: $color-white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+
+  @media screen and (max-width: 900px) {
+    margin-left: 6px;
+  }
+}
+
+.col-start {
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.col-time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 10px;
+}
+
+.edit-sp {
+  display: none;
+}
+
+.edit-col-sp {
+  display: flex;
+
+  .select-datetime {
+    .el-input--suffix .el-input__inner {
+      padding-right: 0;
+    }
+  }
+}
+
+.edit-title-sp {
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.sub-title-sp {
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1150px) {
+  .edit .el-input {
+    width: unset;
+  }
+
+  .edit-time-col {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .edit-pc {
+    display: none;
+  }
+
+  .edit-sp {
+    display: block;
+
+    .el-form-item {
+      margin-bottom: 22px;
+    }
+  }
+}

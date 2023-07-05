@@ -1,0 +1,27 @@
+.motivation-tab {
+
+  &__layout {
+    display: grid;
+    grid-template-columns: 152px 3fr;
+    gap: 20px;
+    min-height: 40px;
+  }
+
+  &__left {
+    display: flex;
+    background: $color-bg-tab;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px 20px;
+    margin-bottom: 3px;
+  }
+
+  &__right {
+    padding: 9px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: break-spaces;
+  }
+}

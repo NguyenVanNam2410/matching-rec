@@ -1,0 +1,76 @@
+.qualification-tab {
+
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    & h3 {
+      font-size: 24px;
+      margin: 0;
+      height: 100%;
+      display: inline-block;
+      line-height: 40px;
+      background-color: $color-black;
+      color: $color-white;
+      padding: 0 3px;
+    }
+  }
+
+  &__body:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  &__description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 16px;
+    gap: 8px;
+  }
+
+  &__col {
+    display: grid;
+    grid-template-columns: 152px 3fr;
+    min-height: 40px;
+    gap: 20px;
+  }
+
+  &__left {
+    display: flex;
+    background: $color-bg-tab;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px 20px;
+  }
+
+  &__right {
+    padding: 9px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: break-spaces;
+  }
+
+  &__sp {
+    display: none;
+  }
+}
+
+.rounded-index {
+  min-width: 22px;
+  width: max-content;
+  height: 22px;
+  border: 1px solid $color-white;
+  font-size: 17px;
+  border-radius: 50%;
+  line-height: 22px;
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: 700;
+  margin-top: -3px;
+}

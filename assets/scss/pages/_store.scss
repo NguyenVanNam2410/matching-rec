@@ -1,0 +1,336 @@
+.store {
+  .max-width-1008 {
+    max-width: 1008px
+  }
+  .el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {
+    border-bottom: 1px solid $color-bg-tab;
+  }
+
+  .el-table--border .el-table__cell, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+    border-right: 1px solid $color-bg-tab;
+  }
+  .el-table--border, .el-table--group {
+    border: 1px solid $color-bg-tab;
+  }
+
+  .store-detail__rec-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: $color-dark-000000;
+  }
+  min-height: calc(100vh - 235px);
+  position: relative;
+
+  .max-205 {
+    max-width: 205px;
+  }
+
+  .address-col {
+    min-width: 44px;
+  }
+
+  &-sp {
+    padding-bottom: 40px;
+    display: none;
+
+    &__table {
+
+      .register-btn {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 8px 16px;
+      }
+
+      .view-btn {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: $color-button-danger;
+        background: $color-white;
+        padding: 8px 16px;
+      }
+    }
+  }
+
+
+  .el-icon-plus {
+    font-size: 20px;
+  }
+
+  .show-more {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-button-danger;
+    padding-right: 10px;
+  }
+  .button-action {
+    .el-button {
+      border-radius: 2px;
+      width: 36px;
+      height: 36px;
+      padding: 0;
+    }
+  }
+
+  .el-table {
+    border-radius: 4px;
+  }
+
+  .el-table .custom-bg {
+    background: $color-tab;
+  }
+
+  .el-table .custom-header {
+    background: $color-bg-table;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px !important;
+    color: $color-dark-000000;
+  }
+
+  .el-table__row .el-table_1_column_1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .el-table__row .el-table_1_column_3 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .view-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-button-danger;
+    cursor: pointer;
+  }
+
+  .el-table__row .el-table_1_column_5 .cell {
+    padding: 0 20px;
+  }
+
+  .register-job-button {
+    width: fit-content;
+    height: 38px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    background: $color-white;
+    color: $color-button-danger;
+    border-radius: 0;
+    padding: 8px 11px;
+    &:hover {
+      background: $color-bg-default;
+      color: $color-hover-danger;
+      border-color: $color-hover-danger;
+    }
+
+    &:focus {
+      background: $color-focus-danger;
+      border-color: $color-focus-danger;
+      color: $color-white;
+    }
+
+  }
+
+  &-nodata {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  &-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $color-dark-50;
+    background: $color-dark-50;
+    padding: 14px 16px;
+    margin-top: 16px;
+
+    &__description {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+      padding-bottom: 5px;
+    }
+
+    &__left {
+      display: flex;
+      gap: 24px;
+    }
+
+    &__button {
+      width: 140px;
+      margin-left: 18px;
+    }
+
+    &__advanced {
+      display: flex;
+      flex-direction: column;
+      background: $color-dark-50;
+      padding: 14px 16px;
+      margin-top: 16px;
+    }
+  }
+
+  &-detail {
+
+    &__name {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+      color: $color-button-danger;
+      word-break: break-all;
+    }
+
+    &__description {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      color: $color-dark-000000;
+      margin-right: 2px;
+    }
+
+    &__content {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 20px;
+      color: $color-dark-000000;
+    }
+  }
+
+  &-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .paging-left {
+      padding: 25px 0 21px 0;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 8px;
+  }
+
+  .ocupation-col {
+    min-width: 70px
+  }
+
+  .advanced-first {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 16px;
+  }
+
+  .rotate-icon {
+    transform: rotate(180deg);
+  }
+
+  .pagination-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 4px;
+  }
+
+  .number-record {
+    margin-right: 2px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .number-record.color-blue {
+    color: $color-button-danger;
+  }
+  .number-record.color-black {
+    color: $color-dark-000000;
+  }
+
+  .pagination-text-end {
+    font-weight: 700;
+    font-size: 16px;
+    color: $color-dark-000000;
+  }
+
+  &-sp {
+
+    &__header {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__button {
+      background: $color-white;
+      color: $color-button-danger;
+      height: 40px;
+      line-height: 0;
+      position: relative;
+      margin: 20px 0;
+
+      & img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__text {
+      font-weight: 700;
+      font-size: 14px;
+      margin-left: 30px;
+    }
+  }
+
+  .dialog-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .el-dialog__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-blue-100;
+  }
+
+  .el-dialog__body {
+    color: $color-text-1;
+  }
+
+  .el-dialog__close {
+    color: $color-text-1 !important;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .el-dialog {
+    width: 100%;
+  }
+
+  .dialog-search-btn {
+    width: 140px;
+
+    & span {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .add-bg {
+    background: $color-bg-default;
+  }
+}

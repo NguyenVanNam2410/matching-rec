@@ -1,0 +1,105 @@
+.pr-tab {
+
+  &__layout {
+    display: grid;
+    grid-template-columns: 175px 3fr;
+    gap: 0;
+    min-height: 54px;
+    border: 1px solid $border-default;
+    margin-bottom: 17px;
+    border-radius: 4px;
+    .pr-tab__left {
+      padding-left: 39px;
+    }
+  }
+  &__layout-info {
+    display: grid;
+    grid-template-columns: 152px 3fr;
+    gap: 0;
+    min-height: 54px;
+    border-radius: 4px;
+
+    .pr-tab__right {
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+      white-space: break-spaces;
+    }
+  }
+  #skill-sheet {
+    .pr-tab__left {
+      align-items: center;
+    }
+  }
+
+  &__left {
+    display: flex;
+    background: $color-bg-tab;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 9px 22px 9px 20px;
+    align-items: center;
+  }
+
+  &__right {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px 0;
+    border: none;
+  }
+
+  .pr-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 17px;
+    display: inline-block;
+    background-color: $color-black;
+    color: $color-white;
+    padding: 4px;
+  }
+
+  .slider-card {
+    padding: 0px 116px 27px 116px;
+  }
+
+  .slider-card {
+    .el-slider {
+      &__runway {
+        height: 9px;
+        background-color: rgba(0, 174, 229, 0.2);
+        border-radius: 100px;
+      }
+
+      &__bar {
+        background: $color-button-danger;
+        height: 9px;
+        border-radius: 100px;
+      }
+
+      &__button {
+        display: none;
+      }
+
+      &__stop {
+        background-color: $color-button-danger;
+        border-radius: 1px;
+        width: 2px;
+        height: 6px;
+        margin-top: 17px;
+      }
+
+      &__marks-text {
+        width: max-content;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 24px;
+        color: $color-black;
+      }
+    }
+  }
+}

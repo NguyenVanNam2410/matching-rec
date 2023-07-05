@@ -1,0 +1,55 @@
+.profile {
+  padding: 16px 24px 16px 0;
+  min-height: calc(100vh - 210px);
+  width: 100%;
+
+  &-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &-table {
+    padding: 24px 18px 104px 20px;
+    margin-top: 14px;
+    background: $color-white;
+    border-radius: 4px;
+  }
+
+  &-col {
+    display: grid;
+    grid-template-columns: 170px 3fr;
+    gap: 16px;
+  }
+
+  &-left {
+    padding: 9px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    background: $color-bg-tab;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-right {
+    padding: 8px 0;
+    a {
+      color: $color-black;
+    }
+  }
+
+  &-content {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &-destination {
+    color: $color-bg-tab-active;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

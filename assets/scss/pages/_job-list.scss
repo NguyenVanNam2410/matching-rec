@@ -1,0 +1,215 @@
+.main-job-container {
+  padding: 18px 24px 32px 0px;
+  width: 100%;
+  .show-sp {
+    display: none;
+  }
+
+  .job-title-sp {
+    display: none;
+  }
+  .breadcrumb-box {
+    display: flex;
+    align-items: center;
+  }
+  .breadcrumb-previous {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: $color-button-danger;
+    cursor: pointer;
+    &:hover {
+      color: $color-hover-danger;
+    }
+  }
+
+  .breadcrumb-current {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    &:hover {
+      color: $text-black-hover;
+    }
+  }
+
+  .breadcrumb-arrow {
+    padding: 0 12px;
+  }
+}
+.job-list {
+  &__image {
+    .job-1 {
+      width: 621px;
+      height: 414px;
+    }
+  }
+  .list-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    img {
+      width: 200px;
+      height: 133px;
+    }
+  }
+
+  .job-status {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-black-100;
+    background: $color-white;
+    border: 1px solid $color-black-100;
+    border-radius: 2px;
+    padding: 0 8px;
+    height: 28px;
+  }
+
+  .open-map {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-button-danger;
+  }
+
+  .condition-title {
+    font-weight: 700;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: $color-white;
+    margin-top: 16px;
+  }
+
+  &__sp {
+    display: none;
+
+    &-header {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 8px;
+    }
+  }
+
+  &__banner {
+    overflow-wrap: anywhere;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-black-100;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 14px;
+    color: $color-bg-tab-active;
+    line-height: 22px;
+    padding-top: 8px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+
+    & button {
+      width: 132px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 0 20px;
+    }
+  }
+
+  &__pickup {
+    padding: 16px 0;
+    display: flex;
+    gap: 16px;
+    background: $color-primary;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .pickup-div {
+      padding: 11px 20px;
+      background: $color-red-primary;
+      color: $color-white;
+      font-weight: 700;
+      font-size: 14px;
+      border-top-right-radius: 22px;
+      border-bottom-right-radius: 22px;
+    }
+
+    .pickup-event {
+      overflow-wrap: anywhere;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      white-space: break-spaces;
+      padding-left: 20px;
+      color: $color-black-100;
+    }
+  }
+
+  &__body {
+    background: $color-white;
+    padding: 20px 20px 24px 20px;
+  }
+
+  &__image {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  &__header {
+    margin: 24px 0 20px;
+    display: inline-block;
+    align-items: center;
+    padding: 4px 5px;
+    background: $color-black-100;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-white;
+  }
+
+  &__col {
+    display: grid;
+    grid-template-columns: 170px 3fr;
+    gap: 16px;
+    min-height: 40px;
+  }
+
+  &__left {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    background: $color-bg-tab;
+    padding: 9px 0 9px 24px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    overflow-wrap: anywhere;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    .show-button-google-map {
+      display: inline-flex;
+      width: max-content;
+    }
+  }
+  .show-textarea {
+    white-space: break-spaces;
+  }
+}

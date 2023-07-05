@@ -1,0 +1,180 @@
+.register {
+
+  .show-image-upload {
+    position: relative;
+    width: fit-content;
+    display: inline-flex;
+    margin-top: 10px;
+
+    .image-close {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      cursor: pointer;
+    }
+  }
+
+  .el-form-item {
+    margin-bottom: 0;
+  }
+
+  .upload-container {
+    margin-bottom: 0;
+  }
+
+  .upload-button {
+    width: 140px;
+    background: $color-white;
+    color: $color-black;
+    border: 1px solid $border-default;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 0;
+    -webkit-appearance: none;
+    height: 30px;
+    label {
+      display: block;
+      padding: 4px 21px;
+      cursor: pointer;
+    }
+    &:hover {
+      background: $color-bg-footer;
+    }
+    &:active {
+      background: $border-default;
+    }
+  }
+
+  .upload-description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: $color-gray-1;
+  }
+
+  .text-limit {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: $color-gray-1;
+    padding-top: 3px;
+  }
+
+  .date-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 5px;
+  }
+
+  .address-col {
+    padding-top: 16px;
+  }
+
+  &-date {
+    padding: 0 10px;
+  }
+
+  &-button {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+
+    & button {
+      width: 136px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &-table {
+    background: $color-white;
+    padding: 14px 0 28px 20px;
+    border-radius: 4px;
+    margin-top: 16px;
+  }
+
+  &-col {
+    display: grid;
+    grid-template-columns: 220px 3fr;
+    gap: 25px;
+    padding-right: 111px;
+  }
+
+  &-left {
+    display: flex;
+    background: $color-bg-tab;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0px 16px 0 16px;
+    align-items: center;
+  }
+
+  &-right {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 3px 0;
+
+    textarea:hover {
+      border-color: $color-text-primary;
+    }
+    .show-note-phone {
+      width: 208px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 18px;
+      color: $color-gray-1;
+      margin-left: 26px;
+    }
+    .select-datetime {
+      .el-input .el-input__suffix .el-input__suffix-inner .el-icon-arrow-up::before {
+        background-image: unset;
+        transform: unset;
+      }
+    }
+  }
+
+  .first-right {
+    padding-top: 3px;
+  }
+
+  &-date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &-sp {
+    display: none;
+
+    &__text {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 12px;
+    }
+
+    &__table {
+      padding-top: 20px;
+    }
+
+    &__item {
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 20px;
+      &.building-name {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
